@@ -18,14 +18,18 @@ export function Hero() {
         <div className="flex flex-col items-center space-y-6 sm:space-y-8 text-center animate-fade-in-up">
           {/* Avatar or Image placeholder */}
           <div className="relative">
-            <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-glow">
-              <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  GO
-                </span>
-              </div>
-            </div>
-          </div>
+  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-primary to-secondary p-[2px] animate-glow">
+    <img
+      src="/gopic.JPG"
+      alt="George Ondigo"
+      className="w-full h-full rounded-full object-cover border-2 border-background"
+    />
+  </div>
+  <div className="absolute -bottom-2 right-2 bg-primary text-background px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+    Dev
+  </div>
+</div>
+
 
           <div className="space-y-3 sm:space-y-4 max-w-3xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-2">
@@ -34,9 +38,9 @@ export function Hero() {
                 George Ondigo
               </span>
             </h1>
-            
-            <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-muted-foreground">
-              Software Developer
+
+            <p className="text-x sm:text-2xl md:text-3xl font-semibold text-muted-foreground">
+              Software Developer & Designer
             </p>
             
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-6 leading-relaxed">

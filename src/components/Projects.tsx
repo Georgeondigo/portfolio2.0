@@ -4,26 +4,48 @@ import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink, Maximize2, Minimize2 } from "lucide-react";
+import { Github, ExternalLink, Maximize2, Minimize2, ChevronLeft, ChevronRight, X } from "lucide-react";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeCategory, setActiveCategory] = useState("All");
   const [isImageFullscreen, setIsImageFullscreen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const filteredProjects = activeCategory === "All" 
     ? projects 
     : projects.filter(p => p.category === activeCategory);
 
-  // Function to check if image is portrait or landscape
-  const getImageAspectClass = (imageUrl: string) => {
-    // You can pre-define aspect ratios in your project data
-    // or use this as a fallback. For better results, add aspectRatio to your project data
-    const img = new Image();
-    img.src = imageUrl;
-    
-    // Default to contain for safety, but you can add logic to detect aspect ratio
-    return "object-contain";
+  // Handle project selection
+  const handleProjectSelect = (project: Project) => {
+    setSelectedProject(project);
+    setCurrentImageIndex(0); // Reset to first image when opening a new project
+    setIsImageFullscreen(false);
+  };
+
+  // Navigation functions for multiple images
+  const nextImage = () => {
+    if (selectedProject?.images) {
+      setCurrentImageIndex((prev) => 
+        prev === selectedProject.images.length - 1 ? 0 : prev + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (selectedProject?.images) {
+      setCurrentImageIndex((prev) => 
+        prev === 0 ? selectedProject.images.length - 1 : prev - 1
+      );
+    }
+  };
+
+  // Get current image URL
+  const getCurrentImage = () => {
+    if (selectedProject?.images && selectedProject.images.length > 0) {
+      return selectedProject.images[currentImageIndex];
+    }
+    return selectedProject?.image || "";
   };
 
   return (
@@ -58,7 +80,7 @@ export function Projects() {
               key={project.id}
               className="group overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/50 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
-              onClick={() => setSelectedProject(project)}
+              onClick={() => handleProjectSelect(project)}
             >
               {/* Project Image */}
               <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 relative overflow-hidden">
@@ -68,6 +90,15 @@ export function Projects() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                
+                {/* Multiple Images Indicator */}
+                {project.images && project.images.length > 1 && (
+                  <div className="absolute top-3 right-3">
+                    <Badge variant="secondary" className="bg-black/60 text-white border-0 text-xs">
+                      {project.images.length} photos
+                    </Badge>
+                  </div>
+                )}
               </div>
 
               <div className="p-6 space-y-4">
@@ -102,19 +133,50 @@ export function Projects() {
       <Dialog open={!!selectedProject} onOpenChange={() => {
         setSelectedProject(null);
         setIsImageFullscreen(false);
+        setCurrentImageIndex(0);
       }}>
         <DialogContent className={`max-w-4xl ${isImageFullscreen ? 'max-w-7xl' : 'max-w-4xl'} max-h-[90vh] overflow-y-auto p-0`}>
           {selectedProject && (
             <>
-              {/* Project Image with Flexible Height */}
+              {/* Project Image Gallery */}
               <div className={`relative bg-gradient-to-br from-primary/10 to-secondary/10 overflow-hidden ${
                 isImageFullscreen ? 'h-[60vh]' : 'h-[400px]'
               }`}>
                 <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className={`w-full h-full ${getImageAspectClass(selectedProject.image)} bg-white/50`}
+                  src={getCurrentImage()}
+                  alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                  className="w-full h-full object-contain bg-white/50"
                 />
+                
+                {/* Navigation Arrows for Multiple Images */}
+                {selectedProject.images && selectedProject.images.length > 1 && (
+                  <>
+                    <Button
+                      size="icon"
+                      variant="secondary"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
+                      onClick={prevImage}
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </Button>
+                    
+                    <Button
+                      size="icon"
+                      variant="secondary"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
+                      onClick={nextImage}
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </Button>
+                  </>
+                )}
+                
+                {/* Image Counter */}
+                {selectedProject.images && selectedProject.images.length > 1 && (
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm backdrop-blur-sm">
+                    {currentImageIndex + 1} / {selectedProject.images.length}
+                  </div>
+                )}
                 
                 {/* Fullscreen Toggle Button */}
                 <Button
@@ -129,7 +191,49 @@ export function Projects() {
                     <Maximize2 className="w-4 h-4" />
                   )}
                 </Button>
+
+                {/* Close Button */}
+<Button
+  size="icon"
+  variant="secondary"
+  className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm z-50"
+  onClick={() => {
+    if (isImageFullscreen) {
+      setIsImageFullscreen(false);
+    } else {
+      setSelectedProject(null);
+    }
+  }}
+>
+  <X className="w-4 h-4" />
+</Button>
+
               </div>
+
+              {/* Image Thumbnails */}
+              {selectedProject.images && selectedProject.images.length > 1 && !isImageFullscreen && (
+                <div className="px-6 pt-4 pb-2 border-b">
+                  <div className="flex gap-2 overflow-x-auto pb-2">
+                    {selectedProject.images.map((image, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+                          index === currentImageIndex 
+                            ? 'border-primary ring-2 ring-primary/20' 
+                            : 'border-border hover:border-primary/50'
+                        }`}
+                      >
+                        <img
+                          src={image}
+                          alt={`Thumbnail ${index + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <div className="p-6 space-y-6">
                 <DialogHeader>
