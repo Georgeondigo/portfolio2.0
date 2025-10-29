@@ -23,6 +23,22 @@ export const services: Service[] = [
     ],
     icon: "Code"
   },
+   {
+    id: "6",
+    title: "Graphics Design",
+    shortDescription: "Creative visual designs for brands, websites, and digital products",
+    fullDescription:
+      "I create visually appealing designs that enhance digital experiences and brand identity. From logos and posters to UI mockups and social media content, I combine creativity with purpose to deliver professional visuals that stand out.",
+    features: [
+      "Logo and brand identity design",
+      "UI mockups and wireframes",
+      "Social media and marketing graphics",
+      "Poster and banner design",
+      "Color theory and typography application",
+      "Consistent visual storytelling",
+    ],
+    icon: "Brush",
+  },
   {
     id: "2",
     title: "API Design & Development",
@@ -82,21 +98,5 @@ export const services: Service[] = [
       "Infrastructure as Code (Terraform)"
     ],
     icon: "CloudCog"
-  },
-  {
-    id: "6",
-    title: "Graphics Design",
-    shortDescription: "Creative visual designs for brands, websites, and digital products",
-    fullDescription:
-      "I create visually appealing designs that enhance digital experiences and brand identity. From logos and posters to UI mockups and social media content, I combine creativity with purpose to deliver professional visuals that stand out.",
-    features: [
-      "Logo and brand identity design",
-      "UI mockups and wireframes",
-      "Social media and marketing graphics",
-      "Poster and banner design",
-      "Color theory and typography application",
-      "Consistent visual storytelling",
-    ],
-    icon: "Brush",
   },
 ];

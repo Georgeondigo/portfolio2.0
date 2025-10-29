@@ -40,12 +40,12 @@ export function Hero() {
             </h1>
 
             <p className="text-x sm:text-2xl md:text-3xl font-semibold text-muted-foreground">
-              Software Developer & Designer
+               Developer & Designer
             </p>
             
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-6 leading-relaxed">
               Crafting elegant, scalable solutions with modern technologies. 
-              Specialized in full-stack development, cloud architecture, web/graphic design, and performance optimization.
+              Specialized in full-stack development, web/graphic design, cloud architecture, and performance optimization.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export function Hero() {
 
           {/* Tech stack preview */}
           <div className="pt-8 sm:pt-12 flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground px-2">
-            {["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker"].map((tech) => (
+            {["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "Adobe", "Canva"].map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-card border border-border hover:border-primary transition-colors cursor-default"
