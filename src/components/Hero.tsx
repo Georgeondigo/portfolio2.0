@@ -7,29 +7,31 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/30">
+    <section className="relative min-h-screen flex items-center  justify-center overflow-hidden bg-gradient-to-br from-background via-background to-muted/30">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-20 -right-20 sm:-top-40 sm:-right-40 w-60 h-60 sm:w-80 sm:h-80 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-72 h-72 sm:w-96 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        <div
+          className="absolute -bottom-20 -left-20 sm:-bottom-40 sm:-left-40 w-72 h-72 sm:w-96 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        />
       </div>
 
-      <div className="container px-4 sm:px-6 relative z-10">
+      <div className="container px-4 pt-16 sm:px-6 relative z-10">
         <div className="flex flex-col items-center space-y-6 sm:space-y-8 text-center animate-fade-in-up">
           {/* Avatar or Image placeholder */}
           <div className="relative">
-  <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-primary to-secondary p-[2px] animate-glow">
-    <img
-      src="/gopic.JPG"
-      alt="George Ondigo"
-      className="w-full h-full rounded-full object-cover border-2 border-background"
-    />
-  </div>
-  <div className="absolute -bottom-2 right-2 bg-primary text-background px-3 py-1 rounded-full text-xs font-semibold shadow-md">
-    Dev
-  </div>
-</div>
-
+            <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-br from-primary to-secondary p-[2px] animate-glow">
+              <img
+                src="/gopic.JPG"
+                alt="George Ondigo"
+                className="w-full h-full rounded-full object-cover border-2 border-background"
+              />
+            </div>
+            <div className="absolute -bottom-2 right-2 bg-primary text-background px-3 py-1 rounded-full text-xs font-semibold shadow-md">
+              Dev
+            </div>
+          </div>
 
           <div className="space-y-3 sm:space-y-4 max-w-3xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-2">
@@ -40,12 +42,13 @@ export function Hero() {
             </h1>
 
             <p className="text-x sm:text-2xl md:text-3xl font-semibold text-muted-foreground">
-               Developer & Designer
+              Developer & Designer
             </p>
-            
+
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4 sm:px-6 leading-relaxed">
-              Crafting elegant, scalable solutions with modern technologies. 
-              Specialized in full-stack development, web/graphic design, cloud architecture, and performance optimization.
+              Crafting elegant, scalable solutions with modern technologies.
+              Specialized in full-stack development, web/graphic design, cloud
+              architecture, and performance optimization.
             </p>
           </div>
 
@@ -60,7 +63,7 @@ export function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
-            
+
             <Button
               size="lg"
               variant="outline"
@@ -75,8 +78,18 @@ export function Hero() {
           </div>
 
           {/* Tech stack preview */}
-          <div className="pt-8 sm:pt-12 flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground px-2">
-            {["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "AWS", "Docker", "Adobe", "Canva"].map((tech) => (
+          <div className="pt-8 pb-16 sm:pt-12 flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground px-2">
+            {[
+              "React",
+              "Next.js",
+              "TypeScript",
+              "Node.js",
+              "PostgreSQL",
+              "AWS",
+              "Docker",
+              "Adobe",
+              "Canva",
+            ].map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-card border border-border hover:border-primary transition-colors cursor-default"
