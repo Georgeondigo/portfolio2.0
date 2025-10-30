@@ -49,6 +49,61 @@ export const projects: Project[] = [
     ]
   },
   {
+    id: "6",
+    title: "Tenant Management System",
+    shortDescription:
+      "Lease management & maintenance-ticket tracking system with RBAC",
+    fullDescription:
+      "Developed a tenant management solution featuring tenant registration, lease tracking, maintenance ticketing with automated reminders, and secure role-based access control. Built using React.js, Node.js backend, PostgreSQL via Supabase, and deployed on AWS.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "PostgreSQL",
+      "Supabase",
+      "AWS",
+      "TypeScript",
+    ],
+    image: "/propertymanagement.png",
+    images: [
+      "/propertymanagement.png",
+      "/PropertyHub-Admin-Panel (1).png",
+      "/PropertyHub-Admin-Panel (2).png",
+      "/PropertyHub-Admin-Panel (3).png",
+    ],
+    githubUrl: "https://github.com/Georgeondigo/Propertymanagementsysyem.git",
+    liveUrl: "https://propertyhubke.vercel.app",
+    category: "Web Application",
+    features: [
+      "Role-based access control system",
+      "Automated maintenance ticket tracking",
+      "Lease agreement management",
+      "Tenant communication portal",
+      "Real-time notifications and reminders"
+    ]
+  },
+  {
+    id: "4",
+    title: "Tiffany Sparkles UI Designs",
+    shortDescription:
+      "UI/UX design mockups for Tiffany Sparkles dashboard and web components",
+    fullDescription:
+      "Designed the UI/UX for Tiffany Sparkles including dashboard layouts, product listing pages, forms, and interactive components. Focused on usability, responsive layouts, and modern visual design principles using Figma and Adobe XD.",
+    technologies: ["Figma", "Adobe XD", "Canva", "Tailwind CSS"],
+    image: "/tsdesign.png",
+    images: [
+      "/tsdesign.png",
+    ],
+    liveUrl: "https://tiffany-sparkles.com/",
+    category: "Graphic Design",
+    features: [
+      "Complete design system creation",
+      "Dashboard and admin panel designs",
+      "Mobile-first responsive layouts",
+      "Interactive component prototypes",
+      "User flow documentation"
+    ]
+  },
+  {
     id: "2",
     title: "Advocate Websites Platform",
     shortDescription:
@@ -82,28 +137,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "4",
-    title: "Tiffany Sparkles UI Designs",
-    shortDescription:
-      "UI/UX design mockups for Tiffany Sparkles dashboard and web components",
-    fullDescription:
-      "Designed the UI/UX for Tiffany Sparkles including dashboard layouts, product listing pages, forms, and interactive components. Focused on usability, responsive layouts, and modern visual design principles using Figma and Adobe XD.",
-    technologies: ["Figma", "Adobe XD", "Canva", "Tailwind CSS"],
-    image: "/tsdesign.png",
-    images: [
-      "/tsdesign.png",
-    ],
-    liveUrl: "https://tiffany-sparkles.com/",
-    category: "Graphic Design",
-    features: [
-      "Complete design system creation",
-      "Dashboard and admin panel designs",
-      "Mobile-first responsive layouts",
-      "Interactive component prototypes",
-      "User flow documentation"
-    ]
-  },
-  {
     id: "11",
     title: "GeoWeb Social Media Posts",
     shortDescription:
@@ -130,39 +163,7 @@ export const projects: Project[] = [
       "Multi-format content creation"
     ]
   },
-  {
-    id: "6",
-    title: "Tenant Management System",
-    shortDescription:
-      "Lease management & maintenance-ticket tracking system with RBAC",
-    fullDescription:
-      "Developed a tenant management solution featuring tenant registration, lease tracking, maintenance ticketing with automated reminders, and secure role-based access control. Built using React.js, Node.js backend, PostgreSQL via Supabase, and deployed on AWS.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "PostgreSQL",
-      "Supabase",
-      "AWS",
-      "TypeScript",
-    ],
-    image: "/propertymanagement.png",
-    images: [
-      "/propertymanagement.png",
-      "/PropertyHub-Admin-Panel (1).png",
-      "/PropertyHub-Admin-Panel (2).png",
-      "/PropertyHub-Admin-Panel (3).png",
-    ],
-    githubUrl: "https://github.com/Georgeondigo/Propertymanagementsysyem.git",
-    liveUrl: "https://propertyhubke.vercel.app",
-    category: "Web Application",
-    features: [
-      "Role-based access control system",
-      "Automated maintenance ticket tracking",
-      "Lease agreement management",
-      "Tenant communication portal",
-      "Real-time notifications and reminders"
-    ]
-  },
+  
   {
     id: "9",
     title: "Watama Law Advocates Website",
