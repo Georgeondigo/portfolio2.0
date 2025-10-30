@@ -263,28 +263,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "8",
-    title: "Inventory Management System",
-    shortDescription:
-      "Web-based inventory management with product tracking and analytics",
-    fullDescription:
-      "Developed a full-featured inventory management system including product catalog, stock tracking, low stock alerts, and analytics dashboards. Built with React.js, Node.js, and PostgreSQL, featuring responsive UI and role-based access control.",
-    technologies: ["React.js", "Node.js", "PostgreSQL", "TypeScript", "Tailwind CSS"],
-    image: "/inventory.webp",
-    images: [
-      "/inventory.webp",
-    ],
-    githubUrl: "https://github.com/GeorgeOndigo/inventory-management",
-    category: "Web Application",
-    features: [
-      "Real-time inventory tracking",
-      "Automated low stock alerts",
-      "Product categorization and search",
-      "Sales analytics and reporting",
-      "Multi-user access control"
-    ]
-  },
-  {
   id: "12",
   title: "Bruclide Construction Business Cards",
   shortDescription:
@@ -306,6 +284,64 @@ export const projects: Project[] = [
     "Custom typography for professional appeal"
   ]
 },
+{
+    id: "12",
+    title: "GeoWeb Social Media Posts",
+    shortDescription:
+      "Branded social media content and promotional designs for GeoWeb Solutions.",
+    fullDescription:
+      "Created engaging social media visuals for GeoWeb Solutions, focusing on brand awareness and digital marketing campaigns. Designed post templates, promotional banners, and carousel ads optimized for platforms like Instagram, LinkedIn, and X (Twitter) using Canva and Adobe Photoshop. Ensured visual consistency with the GeoWeb brand identity and web platform aesthetics.",
+    technologies: ["Canva" ],
+    image: "/seo2 (1).png",
+    images: [
+      "/seo2 (1).png",
+      "/seo2 (2).png",
+      "/seo2 (3).png",
+      "/seo2 (4).png",
+      "/seo2 (5).png",
+    ],
+    liveUrl: "https://geowebsolutions.co.ke",
+    category: "Graphic Design",
+    features: [
+      "Platform-optimized social media templates",
+      "Brand-consistent visual identity",
+      "Engaging carousel and story designs",
+      "Campaign-specific promotional graphics",
+      "Multi-format content creation"
+    ]
+  },
+  {
+  id: "13",
+  title: "GeoWeb Solutions Website",
+  shortDescription:
+    "Corporate website for GeoWeb Solutions showcasing services, portfolio, and digital presence.",
+  fullDescription:
+    "Developed the official website for GeoWeb Solutions, focusing on a clean, professional design with strong branding and optimized performance. Integrated service listings, contact forms, portfolio showcases, and a content-driven layout to enhance client engagement. Ensured full responsiveness, SEO optimization, and modern UX practices.",
+  technologies: [
+    "Next.js",
+    "React.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "Vercel",
+    "Framer Motion",
+  ],
+  image: "/GeoWeb-Solutions.png",
+  images: [
+    "/GeoWeb-Solutions.png",
+  ],
+  githubUrl: "https://github.com/GeorgeOndigo/geowebsolutions",
+  liveUrl: "https://geowebsolutions.co.ke",
+  category: "Web Application",
+  features: [
+    "Responsive and modern corporate design",
+    "Portfolio and service showcase sections",
+    "SEO-optimized content architecture",
+    "Animated transitions using Framer Motion",
+    "Contact form with Formspree integration",
+    "Performance-optimized for fast loading"
+  ]
+},
+
 
 ];
 
