@@ -7,10 +7,10 @@ import {
   Zap,
   ExternalLink,
   Award,
-  Sparkles,
   Target,
   Users,
   Lightbulb,
+  Activity,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -18,42 +18,43 @@ import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
 
 const skills = [
-  { 
-    icon: Code2, 
-    name: "Frontend", 
-    description: "React, TypeScript, Next.js",
-    color: "from-blue-500 to-cyan-500"
-  },
-  {
-    icon: Database,
-    name: "Backend",
-    description: "Node.js, PostgreSQL, MongoDB",
-    color: "from-green-500 to-emerald-500"
-  },
-  { 
-    icon: Cloud, 
-    name: "Cloud", 
-    description: "AWS, Docker, Kubernetes",
-    color: "from-orange-500 to-red-500"
-  },
-  {
-    icon: Layers,
-    name: "Architecture",
-    description: "Microservices, API Design",
-    color: "from-purple-500 to-pink-500"
-  },
-  { 
-    icon: Workflow, 
-    name: "DevOps", 
-    description: "CI/CD, GitHub Actions",
-    color: "from-yellow-500 to-amber-500"
-  },
-  { 
-    icon: Zap, 
-    name: "Performance", 
-    description: "Optimization, Caching",
-    color: "from-violet-500 to-purple-500"
-  },
+{
+  icon: Code2,
+  name: "Frontend",
+  description: "React, TypeScript, Next.js",
+  color: "from-sky-200/60 to-sky-400/60 dark:from-sky-900/40 dark:to-sky-700/40"
+},
+{
+  icon: Database,
+  name: "Backend",
+  description: "Node.js, PostgreSQL, MongoDB",
+  color: "from-teal-200/60 to-teal-400/60 dark:from-teal-900/40 dark:to-teal-700/40"
+},
+{
+  icon: Cloud,
+  name: "Cloud",
+  description: "AWS, Docker, Kubernetes",
+  color: "from-indigo-200/60 to-indigo-400/60 dark:from-indigo-900/40 dark:to-indigo-700/40"
+},
+{
+  icon: Layers,
+  name: "Architecture",
+  description: "Microservices, API Design",
+  color: "from-rose-200/60 to-rose-400/60 dark:from-rose-900/40 dark:to-rose-700/40"
+},
+{
+  icon: Workflow,
+  name: "DevOps",
+  description: "CI/CD, GitHub Actions",
+  color: "from-amber-200/60 to-amber-400/60 dark:from-amber-900/40 dark:to-amber-700/40"
+},
+{
+  icon: Zap,
+  name: "Performance",
+  description: "Optimization, Caching",
+  color: "from-violet-200/60 to-violet-400/60 dark:from-violet-900/40 dark:to-violet-700/40"
+}
+
 ];
 
 const certificates = [
@@ -74,7 +75,7 @@ const certificates = [
 const stats = [
   { icon: Target, value: "2+", label: "Years Experience" },
   { icon: Users, value: "12+", label: "Projects Completed" },
-  { icon: Sparkles, value: "100%", label: "Client Satisfaction" },
+  { icon: Activity, value: "100%", label: "Client Satisfaction" },
   { icon: Lightbulb, value: "∞", label: "Creative Solutions" },
 ];
 
@@ -154,7 +155,7 @@ export function About() {
 
                 <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground font-light">
                   Beyond backend systems and cloud integration, I have a keen eye for 
-                  <strong className="text-foreground"> visually engaging web and UI designs </strong> 
+                   visually engaging web and UI designs 
                   that seamlessly blend functionality with aesthetic appeal.
                 </p>
 
