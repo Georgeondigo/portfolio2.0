@@ -49,61 +49,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "6",
-    title: "Tenant Management System",
-    shortDescription:
-      "Lease management & maintenance-ticket tracking system with RBAC",
-    fullDescription:
-      "Developed a tenant management solution featuring tenant registration, lease tracking, maintenance ticketing with automated reminders, and secure role-based access control. Built using React.js, Node.js backend, PostgreSQL via Supabase, and deployed on AWS.",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "PostgreSQL",
-      "Supabase",
-      "AWS",
-      "TypeScript",
-    ],
-    image: "/propertymanagement.png",
-    images: [
-      "/propertymanagement.png",
-      "/PropertyHub-Admin-Panel (1).png",
-      "/PropertyHub-Admin-Panel (2).png",
-      "/PropertyHub-Admin-Panel (3).png",
-    ],
-    githubUrl: "https://github.com/Georgeondigo/Propertymanagementsysyem.git",
-    liveUrl: "https://propertyhubke.vercel.app",
-    category: "Web Application",
-    features: [
-      "Role-based access control system",
-      "Automated maintenance ticket tracking",
-      "Lease agreement management",
-      "Tenant communication portal",
-      "Real-time notifications and reminders"
-    ]
-  },
-  {
-    id: "4",
-    title: "Tiffany Sparkles UI Designs",
-    shortDescription:
-      "UI/UX design mockups for Tiffany Sparkles dashboard and web components",
-    fullDescription:
-      "Designed the UI/UX for Tiffany Sparkles including dashboard layouts, product listing pages, forms, and interactive components. Focused on usability, responsive layouts, and modern visual design principles using Figma and Adobe XD.",
-    technologies: ["Figma", "Adobe XD", "Canva", "Tailwind CSS"],
-    image: "/tsdesign.png",
-    images: [
-      "/tsdesign.png",
-    ],
-    liveUrl: "https://tiffany-sparkles.com/",
-    category: "Graphic Design",
-    features: [
-      "Complete design system creation",
-      "Dashboard and admin panel designs",
-      "Mobile-first responsive layouts",
-      "Interactive component prototypes",
-      "User flow documentation"
-    ]
-  },
-  {
     id: "2",
     title: "Advocate Websites Platform",
     shortDescription:
@@ -137,33 +82,104 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "11",
-    title: "GeoWeb Social Media Posts",
+    id: "3",
+    title: "Tiffany Sparkles Posters",
     shortDescription:
-      "Branded social media content and promotional designs for GeoWeb Solutions.",
+      "Marketing and promotional posters for Tiffany Sparkles products and events",
     fullDescription:
-      "Created engaging social media visuals for GeoWeb Solutions, focusing on brand awareness and digital marketing campaigns. Designed post templates, promotional banners, and carousel ads optimized for platforms like Instagram, LinkedIn, and X (Twitter) using Canva and Adobe Photoshop. Ensured visual consistency with the GeoWeb brand identity and web platform aesthetics.",
-    technologies: ["Canva", "Adobe Photoshop", "Adobe Illustrator"],
-    image: "/1.png",
+      "Created visually appealing marketing posters, social media graphics, and promotional banners for Tiffany Sparkles. Focused on brand consistency, modern design trends, and engaging visuals using Canva and Adobe Photoshop.",
+    technologies: ["Canva", "Adobe Photoshop"],
+    image: "/tiffposter.png",
     images: [
-      "/1.png",
-      "/2.png",
-      "/3.png",
-      "/4.png",
-      "/5.png",
-      "/6.png",
+      "/tiffposter.png",
     ],
-    liveUrl: "https://geowebsolutions.co.ke",
+    liveUrl: "https://www.behance.net/your-link",
     category: "Graphic Design",
     features: [
-      "Platform-optimized social media templates",
-      "Brand-consistent visual identity",
-      "Engaging carousel and story designs",
-      "Campaign-specific promotional graphics",
-      "Multi-format content creation"
+      "Brand-consistent marketing materials",
+      "Event promotion posters",
+      "Social media optimized graphics",
+      "Print-ready design files",
+      "Multi-format promotional assets"
     ]
   },
-  
+  {
+    id: "4",
+    title: "Tiffany Sparkles UI Designs",
+    shortDescription:
+      "UI/UX design mockups for Tiffany Sparkles dashboard and web components",
+    fullDescription:
+      "Designed the UI/UX for Tiffany Sparkles including dashboard layouts, product listing pages, forms, and interactive components. Focused on usability, responsive layouts, and modern visual design principles using Figma and Adobe XD.",
+    technologies: ["Figma", "Adobe XD", "Canva", "Tailwind CSS"],
+    image: "/tsdesign.png",
+    images: [
+      "/tsdesign.png",
+    ],
+    liveUrl: "https://tiffany-sparkles.com/",
+    category: "Graphic Design",
+    features: [
+      "Complete design system creation",
+      "Dashboard and admin panel designs",
+      "Mobile-first responsive layouts",
+      "Interactive component prototypes",
+      "User flow documentation"
+    ]
+  },
+  {
+    id: "6",
+    title: "Tenant Management System",
+    shortDescription:
+      "Lease management & maintenance-ticket tracking system with RBAC",
+    fullDescription:
+      "Developed a tenant management solution featuring tenant registration, lease tracking, maintenance ticketing with automated reminders, and secure role-based access control. Built using React.js, Node.js backend, PostgreSQL via Supabase, and deployed on AWS.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "PostgreSQL",
+      "Supabase",
+      "AWS",
+      "TypeScript",
+    ],
+    image: "/propertymanagement.png",
+    images: [
+      "/propertymanagement.png",
+      "/PropertyHub-Admin-Panel (1).png",
+      "/PropertyHub-Admin-Panel (2).png",
+      "/PropertyHub-Admin-Panel (3).png",
+    ],
+    githubUrl: "https://github.com/Georgeondigo/Propertymanagementsysyem.git",
+    liveUrl: "https://propertyhubke.vercel.app",
+    category: "Web Application",
+    features: [
+      "Role-based access control system",
+      "Automated maintenance ticket tracking",
+      "Lease agreement management",
+      "Tenant communication portal",
+      "Real-time notifications and reminders"
+    ]
+  },
+  {
+    id: "7",
+    title: "Mpesa Daraja Next.js Integration",
+    shortDescription:
+      "Next.js integration with Mpesa Daraja API for payments and transactions",
+    fullDescription:
+      "Implemented a secure payment gateway using the Mpesa Daraja API in a Next.js application. Features include payment initiation, transaction status checks, and callback handling. Ensured secure API key management and proper error handling.",
+    technologies: ["Next.js", "TypeScript", "Node.js", "Mpesa Daraja API", "Tailwind CSS"],
+    image: "/mpesa-stellar-pay.png",
+    images: [
+      "/mpesa-stellar-pay.png",
+    ],
+    githubUrl: "https://github.com/GeorgeOndigo/mpesa-daraja-nextjs",
+    category: "Web Application",
+    features: [
+      "Secure Mpesa payment integration",
+      "Real-time transaction status updates",
+      "Payment callback handling",
+      "Admin transaction dashboard",
+      "Mobile-optimized payment flows"
+    ]
+  },
   {
     id: "9",
     title: "Watama Law Advocates Website",
@@ -198,50 +214,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "3",
-    title: "Tiffany Sparkles Posters",
-    shortDescription:
-      "Marketing and promotional posters for Tiffany Sparkles products and events",
-    fullDescription:
-      "Created visually appealing marketing posters, social media graphics, and promotional banners for Tiffany Sparkles. Focused on brand consistency, modern design trends, and engaging visuals using Canva and Adobe Illustrator.",
-    technologies: ["Canva", "Adobe Photoshop"],
-    image: "/tiffposter.png",
-    images: [
-      "/tiffposter.png",
-    ],
-    liveUrl: "https://www.behance.net/your-link",
-    category: "Graphic Design",
-    features: [
-      "Brand-consistent marketing materials",
-      "Event promotion posters",
-      "Social media optimized graphics",
-      "Print-ready design files",
-      "Multi-format promotional assets"
-    ]
-  },
-  {
-    id: "7",
-    title: "Mpesa Daraja Next.js Integration",
-    shortDescription:
-      "Next.js integration with Mpesa Daraja API for payments and transactions",
-    fullDescription:
-      "Implemented a secure payment gateway using the Mpesa Daraja API in a Next.js application. Features include payment initiation, transaction status checks, and callback handling. Ensured secure API key management and proper error handling.",
-    technologies: ["Next.js", "TypeScript", "Node.js", "Mpesa Daraja API", "Tailwind CSS"],
-    image: "/mpesa-stellar-pay.png",
-    images: [
-      "/mpesa-stellar-pay.png",
-    ],
-    githubUrl: "https://github.com/GeorgeOndigo/mpesa-daraja-nextjs",
-    category: "Web Application",
-    features: [
-      "Secure Mpesa payment integration",
-      "Real-time transaction status updates",
-      "Payment callback handling",
-      "Admin transaction dashboard",
-      "Mobile-optimized payment flows"
-    ]
-  },
-  {
     id: "10",
     title: "Tiffany Sparkles Cloth Hooks Design",
     shortDescription:
@@ -264,35 +236,62 @@ export const projects: Project[] = [
     ]
   },
   {
-  id: "12",
-  title: "Bruclide Construction Business Cards",
-  shortDescription:
-    "Professional business card design for Bruclide Construction branding.",
-  fullDescription:
-    "Designed premium business cards for Bruclide Construction, reflecting a modern and professional look consistent with the company’s brand identity. Focused on layout balance, typography, and color harmony. Delivered print-ready and digital formats for corporate use and marketing purposes.",
-  technologies: ["Canva"],
-  image: "/bruclide-card-front.png",
-  images: [
-    "/bruclide-card-front.png",
-    "/bruclide-card-back.png"
-  ],
-  liveUrl: "https://www.behance.net/your-link",
-  category: "Graphic Design",
-  features: [
-    "Double-sided modern layout",
-    "Consistent brand color palette",
-    "High-resolution print-ready export",
-    "Custom typography for professional appeal"
-  ]
-},
-{
-    id: "12",
-    title: "GeoWeb Social Media Posts",
+    id: "11",
+    title: "GeoWeb Social Media Posts - Pack 1",
     shortDescription:
       "Branded social media content and promotional designs for GeoWeb Solutions.",
     fullDescription:
-      "Created engaging social media visuals for GeoWeb Solutions, focusing on brand awareness and digital marketing campaigns. Designed post templates, promotional banners, and carousel ads optimized for platforms like Instagram, LinkedIn, and X (Twitter) using Canva and Adobe Photoshop. Ensured visual consistency with the GeoWeb brand identity and web platform aesthetics.",
-    technologies: ["Canva" ],
+      "Created engaging social media visuals for GeoWeb Solutions, focusing on brand awareness and digital marketing campaigns. Designed post templates, promotional banners, and carousel ads optimized for platforms like Instagram, LinkedIn, and X (Twitter) using Canva and Adobe Photoshop.",
+    technologies: ["Canva", "Adobe Photoshop", "Adobe Illustrator"],
+    image: "/1.png",
+    images: [
+      "/1.png",
+      "/2.png",
+      "/3.png",
+      "/4.png",
+      "/5.png",
+      "/6.png",
+    ],
+    liveUrl: "https://geowebsolutions.co.ke",
+    category: "Graphic Design",
+    features: [
+      "Platform-optimized social media templates",
+      "Brand-consistent visual identity",
+      "Engaging carousel and story designs",
+      "Campaign-specific promotional graphics",
+      "Multi-format content creation"
+    ]
+  },
+  {
+    id: "12",
+    title: "Bruclide Construction Business Cards",
+    shortDescription:
+      "Professional business card design for Bruclide Construction branding.",
+    fullDescription:
+      "Designed premium business cards for Bruclide Construction, reflecting a modern and professional look consistent with the company’s brand identity. Focused on layout balance, typography, and color harmony.",
+    technologies: ["Canva"],
+    image: "/bruclide-card-front.png",
+    images: [
+      "/bruclide-card-front.png",
+      "/bruclide-card-back.png"
+    ],
+    liveUrl: "https://www.behance.net/your-link",
+    category: "Graphic Design",
+    features: [
+      "Double-sided modern layout",
+      "Consistent brand color palette",
+      "High-resolution print-ready export",
+      "Custom typography for professional appeal"
+    ]
+  },
+  {
+    id: "13",
+    title: "GeoWeb Social Media Posts - SEO Pack",
+    shortDescription:
+      "Branded SEO and digital marketing promotional designs for GeoWeb Solutions.",
+    fullDescription:
+      "Created engaging social media visuals for GeoWeb Solutions, focusing on brand awareness and digital marketing campaigns. Designed post templates, promotional banners, and carousel ads optimized for platforms like Instagram, LinkedIn, and X (Twitter) using Canva.",
+    technologies: ["Canva"],
     image: "/seo2 (1).png",
     images: [
       "/seo2 (1).png",
@@ -307,43 +306,178 @@ export const projects: Project[] = [
       "Platform-optimized social media templates",
       "Brand-consistent visual identity",
       "Engaging carousel and story designs",
-      "Campaign-specific promotional graphics",
-      "Multi-format content creation"
+      "Campaign-specific promotional graphics"
     ]
   },
   {
-  id: "13",
-  title: "GeoWeb Solutions Website",
-  shortDescription:
-    "Corporate website for GeoWeb Solutions showcasing services, portfolio, and digital presence.",
-  fullDescription:
-    "Developed the official website for GeoWeb Solutions, focusing on a clean, professional design with strong branding and optimized performance. Integrated service listings, contact forms, portfolio showcases, and a content-driven layout to enhance client engagement. Ensured full responsiveness, SEO optimization, and modern UX practices.",
-  technologies: [
-    "Next.js",
-    "React.js",
-    "Tailwind CSS",
-    "TypeScript",
-    "Vercel",
-    "Framer Motion",
-  ],
-  image: "/GeoWeb-Solutions.png",
-  images: [
-    "/GeoWeb-Solutions.png",
-  ],
-  githubUrl: "https://github.com/GeorgeOndigo/geowebsolutions",
-  liveUrl: "https://geowebsolutions.co.ke",
-  category: "Web Application",
-  features: [
-    "Responsive and modern corporate design",
-    "Portfolio and service showcase sections",
-    "SEO-optimized content architecture",
-    "Animated transitions using Framer Motion",
-    "Contact form with Formspree integration",
-    "Performance-optimized for fast loading"
-  ]
-},
-
-
+    id: "14",
+    title: "GeoWeb Solutions Website",
+    shortDescription:
+      "Corporate website for GeoWeb Solutions showcasing services, portfolio, and digital presence.",
+    fullDescription:
+      "Developed the official website for GeoWeb Solutions, focusing on a clean, professional design with strong branding and optimized performance. Integrated service listings, contact forms, portfolio showcases, and a content-driven layout to enhance client engagement.",
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "Vercel",
+      "Framer Motion",
+    ],
+    image: "/GeoWeb-Solutions.png",
+    images: [
+      "/GeoWeb-Solutions.png",
+    ],
+    githubUrl: "https://github.com/GeorgeOndigo/geowebsolutions",
+    liveUrl: "https://geowebsolutions.co.ke",
+    category: "Web Application",
+    features: [
+      "Responsive and modern corporate design",
+      "Portfolio and service showcase sections",
+      "SEO-optimized content architecture",
+      "Animated transitions using Framer Motion",
+      "Contact form with Formspree integration"
+    ]
+  },
+  {
+    id: "15",
+    title: "CITAM Church Event Graphics",
+    shortDescription:
+      "Creative banner and poster designs for CITAM church worship sessions and event promotions.",
+    fullDescription:
+      "Designed vibrant, spiritually thematic promotional materials for CITAM events, including Resurrection Day services and regional worship nights. Emphasized clear event-detail layouts, bold typography, and engaging background aesthetics suited for digital screen displays and printed handouts.",
+    technologies: ["Canva", "Adobe Photoshop"],
+    image: "/CITAM RESURRECTION DAY.png",
+    images: [
+      "/CITAM RESURRECTION DAY.png",
+      "/CITAMKARENWORSHIP.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Thematic spiritual and seasonal visual design",
+      "Clear informational hierarchy for event data",
+      "High-contrast formatting for digital displays",
+      "Print-ready asset optimization"
+    ]
+  },
+  {
+    id: "16",
+    title: "Hospital SHA Marketing Notice",
+    shortDescription:
+      "Professional healthcare notice design announcing official SHA integration.",
+    fullDescription:
+      "Designed an official and clean hospital notice template communicating the clinical transition and upgrade to accept Social Health Authority (SHA) payments. Maintained clean corporate medical layout systems to ensure trustworthiness and high legibility for patient demographics.",
+    technologies: ["Canva"],
+    image: "/WE NOW ACCEPT SHA.png",
+    images: [
+      "/WE NOW ACCEPT SHA.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Professional medical/healthcare notice layout",
+      "High-legibility typography for official announcements",
+      "Clean corporate communication framing"
+    ]
+  },
+  {
+    id: "17",
+    title: "GeoWeb TikTok Marketing Posters",
+    shortDescription:
+      "Dynamic social media creatives designed specifically for the GeoWeb TikTok channel stream.",
+    fullDescription:
+      "Produced a cohesive batch of engaging marketing graphics engineered to target mobile users via the GeoWeb TikTok account. Focused on vibrant color accents, swift readability vectors, and a style structure built to increase digital click-through metrics.",
+    technologies: ["Canva"],
+    image: "/geoweb1.png",
+    images: [
+      "/geoweb1.png",
+      "/geoweb2.png",
+      "/geoweb3.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Short-form viewport social layout matching",
+      "High visual punchiness matching viral account pacing",
+      "Unified software service branding cues"
+    ]
+  },
+  {
+    id: "18",
+    title: "Rotaract Club Inauguration Flyer",
+    shortDescription:
+      "Official event announcement and invitation graphics for the Rotaract leadership inauguration.",
+    fullDescription:
+      "Crafted an elegant and formal community event poster celebrating the official inauguration of new Rotaract club leaders. Integrated professional portrait frames, clear contextual typography detailing times/venues, and kept layout structures aligned with global community service branding goals.",
+    technologies: ["Canva"],
+    image: "/Rotaract ian.png",
+    images: [
+      "/Rotaract ian.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Corporate community event styling",
+      "Structured headshot frame placement",
+      "Balanced event itinerary presentation layout"
+    ]
+  },
+  {
+    id: "19",
+    title: "Sarova Hotels Premium Banner",
+    shortDescription:
+      "Luxury commercial hospitality brand marketing asset for Sarova Hotels.",
+    fullDescription:
+      "Created a high-end commercial marketing banner for Sarova Hotels, leaning heavily on premium imagery and sleek typography layout rules. Aimed at emphasizing the brand's luxurious vibe while managing core informational details cleanly for elite client interactions.",
+    technologies: ["Canva"],
+    image: "/sarova.png",
+    images: [
+      "/sarova.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Premium hospitality aesthetic architecture",
+      "Minimalist text treatments highlighting core brand visuals",
+      "Sophisticated asset color balance matching hotel guidelines"
+    ]
+  },
+  {
+    id: "20",
+    title: "Outdoor Adventure Tour Banners",
+    shortDescription:
+      "Event promotional flyers and active layout materials for group hikes and city tours.",
+    fullDescription:
+      "Designed custom, rugged, and high-impact travel flyers engineered for tour operators and wilderness excursions. Highlighted by the 'Dragon's Teeth Hike' and urban Nairobi sightseeing frames, these pieces effectively convert itinerary details into high-action visual narratives.",
+    technologies: ["Canva", "Adobe Photoshop"],
+    image: "/Dragons teeth hike.png",
+    images: [
+      "/Dragons teeth hike.png",
+      "/NAIROBI.png",
+      "/tours 1.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Adventure and travel-centric text mapping",
+      "Vibrant palette choices optimized for active social feeds",
+      "Clear call-to-actions for booking lookups"
+    ]
+  },
+  {
+    id: "21",
+    title: "Professional Freelance Portfolio Poster",
+    shortDescription:
+      "Self-promotional digital poster highlighting professional web development and full-stack software services.",
+    fullDescription:
+      "Designed a tech-forward professional banner to directly showcase freelance availability and service offerings across Next.js, React, and Database engineering. Tailored to captivate remote clients across tech channels and freelance platforms.",
+    technologies: ["Canva", "Figma"],
+    image: "/Webdeveloperposter.png",
+    images: [
+      "/Webdeveloperposter.png"
+    ],
+    category: "Graphic Design",
+    features: [
+      "Tech-centric visual language",
+      "Skill matrix summary visualization",
+      "Direct call-to-action layout optimization"
+    ]
+  }
 ];
 
 export const categories = [

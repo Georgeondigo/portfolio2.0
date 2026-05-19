@@ -35,7 +35,7 @@ export function Hero() {
 
           <div className="space-y-3 sm:space-y-4 max-w-3xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight px-2">
-              Hi, I'm{" "}
+              
               <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-gradient">
                 George Ondigo
               </span>
